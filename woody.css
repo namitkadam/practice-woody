@@ -325,40 +325,42 @@ main .banner .banner_img .button a:nth-child(2):hover{
 	margin: 50px 85px 65px 85px;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 30px;
+	justify-content: center;
 }
 .Service .service_cards .only_service_card{
-	width: 400px;
-	height: 430px;
+	min-width: 350px;
+	max-width: 400px;
 	text-align: center;
+
+}
+.Service .service_cards .only_service_card .image_container{
 	overflow: hidden;
+	display: flex;
 }
 .Service .service_cards .only_service_card img{
-	width: 450px;
-	left: -4.5px;
-	top: -4px;
 	max-width: 100%;
 	z-index: -1;
+	transition: .3s;
 }
-.Service .service_cards:hover img{
+.Service .only_service_card:hover img{
 	transform: scale(1.1);
 }
 .Service .service_cards .only_service_card .text_service{
+	border: 5px solid #eee;
 	border-top: none;
-	border: 5px solid #000;
+	padding: 20px;
 }
 .Service .service_cards .only_service_card .text_service h6{
 	font-size: 26px;
 	font-weight: 900;
-	margin-top: 20px;
+
 }
 .Service .service_cards .only_service_card .text_service p{
-	width: 320px;
 	font-size: 18px;
 	line-height: 22px;
 	color: #353535;
-	margin: auto;
-	padding: 20px 0px;
+	padding: 20px;
 }
 .Service .service_cards .only_service_card .text_service a{
 	font-size:18px;
@@ -367,4 +369,74 @@ main .banner .banner_img .button a:nth-child(2):hover{
 .Service .service_cards .only_service_card .text_service i{
 	padding-left: 2px;
 	font-weight: 900;
+}.about .about_cards{
+	margin-top: 100px;
+	display: flex;
+	
+}
+.about .about_cards .left_about_card img{
+	width: 720px;
+	height: 509px;
+}
+.about .about_cards .right_about_cards{
+	padding-left: 50px;
+	background-color: #f5f5f5;
+	width: 720px;
+}
+.about .about_cards .right_about_cards .text h1{
+	font-family: "Open Sans";	
+	font-size: 50px;
+	font-weight: 900;
+	margin-bottom: 24px;
+	padding-top: 100px;
+	color: #353535;
+}
+.about .about_cards .right_about_cards .text p{
+	width: 600px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 24px;
+	color: #555;
+	letter-spacing: 2px;
+	line-height: 22px;
+}
+.about .about_cards .right_client_card{
+	display: flex;
+	gap: 20px;
+}
+.about .about_cards .right_about_cards .right_client_card .right_card_inside{
+	width: 290px;
+	display: flex;
+	gap: 20px;
+}
+.about .about_cards .right_about_cards .right_client_card .right_card_inside i{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	width: 60px;
+	height: 60px;
+	color: #AB7442;
+	background-color: #fff;
+}
+.about .about_cards .right_about_cards .right_client_card .right_card_inside .client h6{
+	font-size: 32px;
+	font-weight: 900;
+	color: #AB7442;
+}
+.about .about_cards .right_about_cards .right_client_card .right_card_inside .client p{
+	color: #696969;
+	font-size: 18px;
+	margin-top: 10px;
+}
+.about .about_cards .right_about_cards .button_about {
+	margin-top: 50px;
+}
+.about .about_cards .right_about_cards .button_about a{
+	font-size: 18px;
+	padding: 20px 45px;
+	background-color: #AB7442;
+	color: #fff;
+	letter-spacing: 1px;
+
 }
