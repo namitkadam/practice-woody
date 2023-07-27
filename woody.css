@@ -630,11 +630,10 @@ main .banner .banner_img .button a:nth-child(2):hover{
 .team_members .members .only_member{
 	min-width: 250px;
 	max-width: 300px ;
-	position: relative;
-	z-index: -1;
 }
 .team_members .members .only_member .img_container_members{
 	overflow: hidden;
+	position: relative;
 	z-index:-1;
 }
 .team_members .members .only_member .img_container_members img{
@@ -664,7 +663,6 @@ main .banner .banner_img .button a:nth-child(2):hover{
 .team_members .members .only_member:hover .overplay_icon{
 	opacity: 1;
 }
-
 .team_members .members .text_members{
 	border: 5px solid #eee;
 	border-top: none;
@@ -727,13 +725,15 @@ main .banner .banner_img .button a:nth-child(2):hover{
 	font-style: italic;
 	color: #555;
 }
-footer .footer{
+footer{
 	padding: 10px 50px;
-	color: #fff;
 	background-color: #313131;
+}
+footer .footer{
+	color: #fff;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 2px solid 256,256,256,.1;
+	padding-bottom: 50px;
 }
 footer .footer .address h5{
 	font-size:22px;
@@ -822,6 +822,7 @@ footer .footer .letter .form_letter input{
 	height: 56px;
 	padding-left: 20px;
 	font-size: 16px;
+	border: none;
 }
 footer .footer .letter .form_letter a{
 	font-size: 18px;
@@ -830,4 +831,19 @@ footer .footer .letter .form_letter a{
 	background-color: #AB7442;
 	position: absolute;
 	left: 187px;
-	top: 7px;}
+	top: 7px;
+}
+footer .copyright{
+	padding: 25px;
+	border-top: 1px solid rgba(256,256,256,.1);
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+}
+footer .copyright a{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+footer .copyright a:hover{
+	color: #AB7442;
+}
