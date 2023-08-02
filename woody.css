@@ -125,11 +125,14 @@ header nav .nav_container_home{
 	display: flex;
 	align-items: center;
 }
+
 header nav .nav_container_home .menu_icon{
 	font-size: 1.8em;
 	margin-right: 1em;
 	color: #AB7442	;
 	position: relative;
+	cursor: pointer;
+	display: none;
 
 }
 header nav .nav_container_home .home ul{
@@ -159,14 +162,14 @@ header nav .nav_container_home .quote i{
 header nav .nav_container_home .home ul li a:hover{
 color: #AB7442;
 }
-main .banner .banner_img{
-	background-image: url("img/carousel-1.jpg");
-	background-size: cover;
-	width: 100%;
-	height: 100%	;
-}
 main .banner{
 	padding-top: 8em;
+	background-image: url("./img/carousel-1.jpg");
+	width: 100%;
+}
+main .banner .banner_img{
+	background-size: cover;
+	max-width: 100%;
 }
 main .banner .banner_img .text{
 	background: rgba(53,53,53,.7);
@@ -857,21 +860,34 @@ footer .copyright a{
 footer .copyright a:hover{
 	color: #AB7442;
 }
+.nav-checkbox:checked + .test-nav{
+	background-color: red;
+}
 /* ----------------------------------media---------------------------------------------- */
-@media (max-width: 992px) {
+
+@media only screen and (max-width: 992px) {
 	header nav .nav_container_home .home ul {
-	 width: 100%;
-	 flex-direction: column;
-	 position: absolute;
-	 top: 6.5em;
-	 right: 15em;
-	 gap: 10px;
-	 background-color: #a0734a6f;
-	 z-index: -1;
+		width:19%;
+		position: absolute;
+		flex-direction: column;
+		top: 8.4em;
+		right: 15.3em;
+		padding: 1em;
+		background-color:#a0734a7e;
+		z-index: 2;
+		gap: 1em;
+		display: flex;
+	}
+	header nav .nav_container_home .home ul li{
+		display: block;
 	}
 	header nav .nav_container_home .home ul li a{
-		color: #eee;
-		
-
+		color: #fff;
 	}
+	header nav .nav_container_home .menu_icon{
+		display: block;
+	}
+	main .banner .banner_img {
+		width: 100% !important;
+	}	
 }

@@ -22,6 +22,9 @@
 </head>
 
 <body>
+    <!-- <label> </label>
+    <input type="checkbox" class="nav-checkbox" name="navbar">
+    <div class="test-nav">HELLO</div> -->
     <header>
         <div class="container_main direct_flex">
             <div class="right_side_container direct_flex">
@@ -73,17 +76,17 @@
                 </div>
                 <div class="nav_container_home">
                     <div class="home">
-                        <ul>
-                            <li><a href="#" style="color: #AB7442;">Home</a></li>
+                        <ul id="menu_list">
+                            <li><a href="#">Home</a></li>
                             <li><a href="#">about</a></li>
                             <li><a href="#">Service</a></li>
                             <li><a href="#">Project</a></li>
                             <li><a href="#">pages</a> </li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                    </div>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-bars"></i>
+                        <div class="menu_icon" onclick="togglemenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
                     <div class="quote">
                         <a href="#">Get A Quote
@@ -168,7 +171,7 @@
     <section class="about">
         <div class="about_cards">
             <div class="left_about_card">
-                <img src="/img/about.jpg" alt="">
+                <img src="./img/about.jpg" alt="">
             </div>
             <div class="right_about_cards">
                 <div>
@@ -205,7 +208,7 @@
         <h2>__ Our Services __</h2>
         <div class="service_cards">
             <div class="only_service_card">
-                <div class="image_container"> <img src="/img/service-1.jpg" alt=""></div>
+                <div class="image_container"> <img src="./img/service-1.jpg" alt=""></div>
                 <div class="text_service">
                     <h6>General Carpentry</h6>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -216,7 +219,7 @@
                 </div>
             </div>
             <div class="only_service_card">
-                <div class="image_container"> <img src="/img/service-2.jpg" alt=""></div>
+                <div class="image_container"> <img src="./img/service-2.jpg" alt=""></div>
                 <div class="text_service">
                     <h6>Furniture Manufacturing</h6>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -227,7 +230,7 @@
                 </div>
             </div>
             <div class="only_service_card">
-                <div class="image_container"> <img src="/img/service-3.jpg" alt=""></div>
+                <div class="image_container"> <img src="./img/service-3.jpg" alt=""></div>
                 <div class="text_service">
                     <h6>Furniture Remodeling</h6>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -238,7 +241,7 @@
                 </div>
             </div>
             <div class="only_service_card">
-                <div class="image_container"> <img src="/img/service-4.jpg" alt=""></div>
+                <div class="image_container"> <img src="./img/service-4.jpg" alt=""></div>
                 <div class="text_service">
                     <h6>Wooden Floor</h6>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -249,7 +252,7 @@
                 </div>
             </div>
             <div class="only_service_card">
-                <div class="image_container"> <img src="/img/service-5.jpg" alt=""></div>
+                <div class="image_container"> <img src="./img/service-5.jpg" alt=""></div>
                 <div class="text_service">
                     <h6>Wooden Furniture</h6>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -260,7 +263,7 @@
                 </div>
             </div>
             <div class="only_service_card">
-                <div class="image_container"> <img src="/img/service-6.jpg" alt=""></div>
+                <div class="image_container"> <img src="./img/service-6.jpg" alt=""></div>
                 <div class="text_service">
                     <h6>Custom Work</h6>
                     <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -317,7 +320,7 @@
                 </div>
             </div>
             <div class="right_choose_card">
-                <img src="/img/feature.jpg" alt="">
+                <img src="./img/feature.jpg" alt="">
             </div>
         </div>
     </section>
@@ -332,7 +335,7 @@
         </div>
         <div class="project_cards">
             <div class="only_project_card">
-                <div class="image_container"> <img src="/img/service-1.jpg" alt="">
+                <div class="image_container"> <img src="./img/service-1.jpg" alt="">
                     <div class="overplay">
                         <a href="#"><i class="fa-solid fa-eye"></i></a>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
@@ -348,7 +351,7 @@
                 </div>
             </div>
             <div class="only_project_card">
-                <div class="image_container"> <img src="/img/service-2.jpg" alt="">
+                <div class="image_container"> <img src="./img/service-2.jpg" alt="">
                     <div class="overplay">
                         <a href="#"><i class="fa-solid fa-eye"></i></a>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
@@ -364,7 +367,7 @@
                 </div>
             </div>
             <div class="only_project_card">
-                <div class="image_container"> <img src="/img/service-3.jpg" alt="">
+                <div class="image_container"> <img src="./img/service-3.jpg" alt="">
                     <div class="overplay">
                         <a href="#"><i class="fa-solid fa-eye"></i></a>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
@@ -380,7 +383,7 @@
                 </div>
             </div>
             <div class="only_project_card">
-                <div class="image_container"> <img src="/img/service-4.jpg" alt="">
+                <div class="image_container"> <img src="./img/service-4.jpg" alt="">
                     <div class="overplay">
                         <a href="#"><i class="fa-solid fa-eye"></i></a>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
@@ -396,7 +399,7 @@
                 </div>
             </div>
             <div class="only_project_card">
-                <div class="image_container"> <img src="/img/service-5.jpg" alt="">
+                <div class="image_container"> <img src="./img/service-5.jpg" alt="">
                     <div class="overplay">
                         <a href="#"><i class="fa-solid fa-eye"></i></a>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
@@ -412,7 +415,7 @@
                 </div>
             </div>
             <div class="only_project_card">
-                <div class="image_container"> <img src="/img/service-6.jpg" alt="">
+                <div class="image_container"> <img src="./img/service-6.jpg" alt="">
                     <div class="overplay">
                         <a href="#"><i class="fa-solid fa-eye"></i></a>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
@@ -433,7 +436,7 @@
     <section class="quote">
         <div class="quote_cards">
             <div class="left_quote_card">
-                <img src="/img/quote.jpg" alt="">
+                <img src="./img/quote.jpg" alt="">
             </div>
             <div class="right_quote_cards">
                 <div>
@@ -473,7 +476,7 @@
             <div class="only_member">
                 <div class="img_container_members">
                     <div>
-                        <img src="/img/team-1.jpg" alt="team-1">
+                        <img src="./img/team-1.jpg" alt="team-1">
                     </div>
                     <div class="overplay_icon">
                         <ul>
@@ -491,7 +494,7 @@
             <div class="only_member">
                 <div class="img_container_members">
                     <div>
-                        <img src="/img/team-2.jpg" alt="team-1">
+                        <img src="./img/team-2.jpg" alt="team-1">
                     </div>
                     <div class="overplay_icon">
                         <ul>
@@ -509,7 +512,7 @@
             <div class="only_member">
                 <div class="img_container_members">
                     <div>
-                        <img src="/img/team-3.jpg" alt="team-1">
+                        <img src="./img/team-3.jpg" alt="team-1">
                     </div>
                     <div class="overplay_icon">
                         <ul>
@@ -527,7 +530,7 @@
             <div class="only_member">
                 <div class="img_container_members">
                     <div>
-                        <img src="/img/team-4.jpg" alt="team-1">
+                        <img src="./img/team-4.jpg" alt="team-1">
                     </div>
                     <div class="overplay_icon">
                         <ul>
@@ -547,7 +550,7 @@
     <section class="testimonial">
         <div class="heading">__ Testimonial __</div>
         <div class="testimonial_img">
-            <img src="/img/testimonial-1.jpg" alt=" ">
+            <img src="./img/testimonial-1.jpg" alt=" ">
         </div>
         <div class="testimonial_text">
             <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit
@@ -648,6 +651,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        var menu_list = document.getElementById("menu_list");
+        menu_list.style.maxHeight = "0 px";
+        function togglemenu() {
+            if (menu_list.style.display == "flex") {
+                menu_list.style.display = "none"
+            }
+            else {
+                menu_list.style.display = "flex"
+            }
+        }
+    </script>
 </body>
 
 </html>
